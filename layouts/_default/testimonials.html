@@ -1,3 +1,5 @@
+{{ define "main" }}
+{{ .Content }}
 <section id="testimonials">
     {{ range first 5 .Pages }}
     <blockquote cite="{{ .Params.cite }}">
@@ -5,3 +7,4 @@
     </blockquote>
     {{ end }}
 </section>
+{{ end }}
